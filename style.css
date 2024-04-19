@@ -1,0 +1,59 @@
+
+body {
+    border: 10px solid black
+}
+#title {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+#meet {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#animalImages {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+        padding:0;
+    margin: 0;
+}
+
+#animalImages img {
+    flex: 1;
+    max-width: 100%;
+    min-width: 20%;
+    /*keep aspect ratio*/
+    height: auto;
+    padding:0;
+    margin: 0;
+    border: 5px solid black
+
+}
+
+
+#buttons {
+    position: absolute; /* Position the buttons relative to the nearest positioned ancestor */
+    bottom: 0; /* Align buttons to the top of the container */
+    left: 0; /* Align buttons to the left of the container */
+    width: 100%; /* Occupy the full width of the container */
+    height: 30%; /* Occupy the full height of the container */
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+#buttons button {
+    flex: 1; /* Distribute available space evenly among buttons */
+    max-width: 30%; /* Adjust the maximum width as needed */
+    padding: 0; /* Add padding to buttons */
+opacity: 0;
+    border: none; /* Remove borders */
+    pointer-events: all; /* Allow clicks on buttons */
+}
